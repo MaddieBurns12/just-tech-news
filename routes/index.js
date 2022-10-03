@@ -8,4 +8,4 @@ router.use((req, res) => {
     res.status(404).end();
 });
 
-module.exportss = router;
+module.exports = router;
