@@ -2,7 +2,7 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 //create our post model
-class Post extends Model {};
+class Post extends Model {}
 
 //create fields/columns for post model
 Post.init(
@@ -28,7 +28,7 @@ Post.init(
             type: DataTypes.INTEGER,
             references: {
                 model: 'user',
-                key: 'id',
+                key: 'id'
             }
         }
     },

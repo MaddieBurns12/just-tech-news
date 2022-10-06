@@ -26,7 +26,7 @@ User.init(
         // define a username column
         username: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: false
         },
         // define an email column
         email: {
@@ -36,7 +36,7 @@ User.init(
             unique: true, 
             // if allowNull is set to false, we can run our data through validators before creating the table data`
             validate: {
-                isEmail: true,
+                isEmail: true
             }
         },
         // define a password column
